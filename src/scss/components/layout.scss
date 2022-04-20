@@ -12,17 +12,7 @@
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: 1fr 1fr;
         gap: 2rem;
-        @include maxWidth(1024px)
-        {
-            
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-        }
-        @include maxWidth(768px)
-        {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(5,1fr);
-        }
+  
     }
     &__item
     {
@@ -32,62 +22,27 @@
         &--violet
         {
             @include area(1,2,1,3,var(--color-violet),var(--color-white));
-            @include maxWidth(1024px)
-            {
-                @include area(1,2,1,3,var(--color-violet),var(--color-white));
-            }
-            @include maxWidth(768px)
-            {
-                @include area(1,2,1,2,var(--color-violet),var(--color-white));
-            }
+
         }
         &--grey
         {
             @include area(1,2,3,4,var(--color-grey),var(--color-white));
-            @include maxWidth(1024px)
-            {
-                @include area(2,3,1,2,var(--color-grey),var(--color-white));
-            }
-            @include maxWidth(768px)
-            {
-                @include area(2,3,1,2,var(--color-grey),var(--color-white));
-            }
+
         }
         &--white
         {
             @include area(2,3,1,2,var(--color-white));
-            @include maxWidth(1024px)
-            {
-                @include area(2,3,2,3,var(--color-white));
-            }
-            @include maxWidth(768px)
-            {
-                @include area(3,4,1,2,var(--color-white));
-            }
+
         }
         &--dark-grey
         {
             @include area(2,3,2,4,var(--color-dark-grey),var(--color-white));
-            @include maxWidth(1024px)
-            {
-                @include area(3,4,1,2,var(--color-dark-grey),var(--color-white));
-            }
-            @include maxWidth(768px)
-            {
-                @include area(4,5,1,2,var(--color-dark-grey),var(--color-white));
-            }
+
         }
         &--white-long
         {
             @include area(1,3,4,5,var(--color-white));
-            @include maxWidth(1024px)
-            {
-                @include area(3,4,2,3,var(--color-white));
-            }
-            @include maxWidth(768px)
-            {
-                @include area(5,6,1,2,var(--color-white));
-            }
+
         }
     }
     
