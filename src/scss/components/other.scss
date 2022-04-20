@@ -1,0 +1,38 @@
+@use "../utils" as *;
+@use "../globals" as *;
+
+// Author Component
+.author {
+    display: flex;
+    align-items: center;
+    
+    &__img
+    {
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+    &__name
+    {
+        font-size: 0.4em;
+        padding: 0 1.25rem;
+        
+    }
+
+}
+
+// Heading Component
+.heading {
+    font-size: 0.78em;
+    margin: 1.25rem 0;
+}
+// Detail Component
+.detail {
+    font-size: 0.5em;
+    &--light-grey
+    {
+        color: var(--color-light-grey);
+    }
+    &--grey {
+        color: var(--color-grey);
+    }
+}
